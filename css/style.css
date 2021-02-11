@@ -1,0 +1,147 @@
+body {
+	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+	min-width: 960px;
+}
+
+header {
+	padding-top: 40%;
+	background-image: url("../image/bg-main_visual.jpg");
+	background-size: cover;
+	position: relative;
+}
+
+header .label {
+	position: absolute;
+	left: 60px;
+	bottom: 60px;
+}
+
+.concept {
+	height: 400px;
+	background-color: #FFFFF3;
+	text-align: center;
+}
+
+.concept h3 {
+	font-size: 32px;
+	font-weight: bold;
+	padding: 98px 0 48px;
+}
+
+.concept p {
+	line-height: 32px;
+	font-weight: normal;
+}
+
+.photo {
+	background-image: url("../image/bg-content.jpg");
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;/* スクロールしても動かない背景 */
+	height: 1502px;
+	min-width: 960px;
+}
+
+.cards {
+	width: 960px;
+	margin: 0 auto;
+	padding: 50px;
+	background: rgba(0,0,0,0.4);
+}
+
+.photo .heading {
+	color: white;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	padding-top: 98px;
+	padding-bottom: 48px;
+}
+
+.photo .card {
+	display: flex;
+}
+
+.photo .card:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.photo .card .image-content {
+	width: 50%;
+}
+
+.photo .card .image-content img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.photo .card .text-content {
+	background-color: #FFFFF3;
+	width: 50%;
+}
+
+.photo .card .text-content .title {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 45px 20px 0;
+}
+
+.photo .card .text-content .content {
+	padding: 30px 20px;
+	line-height: 29px;
+}
+
+.company {
+	padding-top: 100px;
+	background-color: #FFFFF3;
+	text-align: center;
+}
+
+.company .heading {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.company .text_message {
+	margin-top: 50px;
+	line-height: 35px;
+}
+
+.company .logos {
+	display: flex;
+	justify-content: center;  /* 水平方向の中央寄せ */
+	padding: 60px 0 100px;
+}
+
+.company .logos .logo {
+	padding: 0 30px;
+}
+
+footer {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	padding: 24px 20px;
+	background-color: black;
+	color: white;
+}
+
+footer .footer__center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 15px;
+}
+
+footer .footer__nav ul {
+	display: flex;
+}
+
+footer .footer__nav ul li a {
+	font-size: 12px;
+	margin-left: 15px;
+	border-bottom: solid 1px white;
+}
